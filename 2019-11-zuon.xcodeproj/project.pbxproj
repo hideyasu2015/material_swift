@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41815542382D7A4008FEB25 /* MDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41815532382D7A4008FEB25 /* MDTextField.swift */; };
+		E41815562382D7BB008FEB25 /* MDTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41815552382D7BB008FEB25 /* MDTextField.xib */; };
 		E452CFE6237EE0D0002F7595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452CFE5237EE0D0002F7595 /* AppDelegate.swift */; };
 		E452CFE8237EE0D0002F7595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452CFE7237EE0D0002F7595 /* SceneDelegate.swift */; };
 		E452CFEA237EE0D0002F7595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452CFE9237EE0D0002F7595 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41815532382D7A4008FEB25 /* MDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTextField.swift; sourceTree = "<group>"; };
+		E41815552382D7BB008FEB25 /* MDTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MDTextField.xib; sourceTree = "<group>"; };
 		E452CFE2237EE0D0002F7595 /* 2019-11-zuon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2019-11-zuon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E452CFE5237EE0D0002F7595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E452CFE7237EE0D0002F7595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				E452CFFE237EE48C002F7595 /* BaseViewController.swift */,
 				E452D000237EE4F8002F7595 /* Const.swift */,
 				E452D002237EEBEB002F7595 /* PhotoCell.swift */,
+				E41815532382D7A4008FEB25 /* MDTextField.swift */,
+				E41815552382D7BB008FEB25 /* MDTextField.xib */,
 			);
 			path = "2019-11-zuon";
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 			files = (
 				E452CFF5237EE0D3002F7595 /* LaunchScreen.storyboard in Resources */,
 				E452CFF2237EE0D3002F7595 /* Assets.xcassets in Resources */,
+				E41815562382D7BB008FEB25 /* MDTextField.xib in Resources */,
 				E452CFED237EE0D0002F7595 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 				E452CFE6237EE0D0002F7595 /* AppDelegate.swift in Sources */,
 				E452CFF0237EE0D0002F7595 /* _019_11_zuon.xcdatamodeld in Sources */,
 				E452CFE8237EE0D0002F7595 /* SceneDelegate.swift in Sources */,
+				E41815542382D7A4008FEB25 /* MDTextField.swift in Sources */,
 				E452D003237EEBEB002F7595 /* PhotoCell.swift in Sources */,
 				E452CFFD237EE1CF002F7595 /* ButtonExtensions.swift in Sources */,
 				E452CFFF237EE48C002F7595 /* BaseViewController.swift in Sources */,

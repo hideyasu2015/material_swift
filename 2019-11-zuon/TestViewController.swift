@@ -8,23 +8,52 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+class TestViewController: BaseViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var testButton: UIButton!
+    
+    @IBOutlet weak var backGround: UIView!
+    
+    @IBOutlet weak var addButton: UIButton!
+    
+    @IBOutlet weak var searchTextField: MDTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        testButton.makeShadow()
+        testButton.makeCorner(cornerRadius: 3)
+        searchTextField.delegate = self
+  
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
     }
-    */
-
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("text = \(textField.text)")
+    }
 }
+
+extension UIView {
+    
+    func makeShadow2(shadowColor: UIColor? = .black, shadowOffset: CGSize = .zero, shadowRadius: CGFloat = 2.5, shadowOpacity: Float = 0.75){
+        layer.shadowColor = shadowColor?.cgColor
+        layer.shadowOffset = shadowOffset
+        layer.shadowRadius = shadowRadius
+        layer.shadowOpacity = shadowOpacity
+    }
+    func makeCorner(cornerRadius: CGFloat = 2.5){
+        layer.cornerRadius = cornerRadius
+        layer.masksToBounds = true
+        
+    }
+    
+    
+    
+    
+}
+
+
+
+
