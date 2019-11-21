@@ -14,11 +14,14 @@ enum MDTextFieldStyle {
 }
 
 class MDTextField: UIView {
+
     
     @IBOutlet var contentView: UIView!
     @IBOutlet var borderView: UIView!
     @IBOutlet var textField: UITextField!
+    //ラベルでプレースホルダー
     @IBOutlet var placeholderLabel: UILabel!
+    //位置変更のため
     @IBOutlet var placeholderLabelTopLayout: NSLayoutConstraint!
     
     var delegate: UITextFieldDelegate? = nil
@@ -41,13 +44,27 @@ class MDTextField: UIView {
         super.init(frame: frame)
         initSubViews()
     }
+  
+  
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         initSubViews()
     }
+  
+   
     
-    private func initSubViews() {
+//    private func initSubViews() {
+//        Bundle.main.loadNibNamed("MDTextField", owner: self, options: nil)
+//        addSubview(contentView)
+//        contentView.frame = bounds
+//        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        textField.delegate = self
+//        borderView.bringSubviewToFront(placeholderLabel)
+//        type = .ROUNDED_BORDER
+//    }
+  
+    private func initSubViews(){
         Bundle.main.loadNibNamed("MDTextField", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
@@ -55,7 +72,9 @@ class MDTextField: UIView {
         textField.delegate = self
         borderView.bringSubviewToFront(placeholderLabel)
         type = .ROUNDED_BORDER
+        
     }
+    
     
     func addBorderTextField() {
         borderView.layer.borderColor = UIColor.gray.cgColor
@@ -101,7 +120,7 @@ extension MDTextField: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         movePlaceholderToTop()
-        delegate?.textFieldDidBeginEditing?(textField)
+//        delegate?.textFieldDidBeginEditing?(textField)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {

@@ -61,7 +61,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-238.125" y="62.323943661971832"/>
+            <point key="canvasLocation" x="-137" y="63"/>
         </view>
     </objects>
 </document>
